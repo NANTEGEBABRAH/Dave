@@ -1,0 +1,20 @@
+*{
+    background-color :  blueviolet;
+    box-shadow: chartreuse;
+}
+.core{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: dotted;
+    text-decoration-color: aqua;
+    color: black;
+    background-color: red;
+    padding-top: 0rem;
+}
+.core1 {
+    font-style: italic;
+    font: 300;
+    color: orchid;
+    text-decoration: dashed;
+    text-align: center;
+}
+
