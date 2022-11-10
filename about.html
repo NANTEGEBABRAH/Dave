@@ -60,10 +60,10 @@
         </article>
     </div>
 </section>
-<section class="container testimonials_container">
+<section class="container testimonials_container mySwiper">
     <h2 style="text-align: center; color:black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">"TESTOMONIALS"</h2>
-    <div>
-        <article    class="testimonial">
+    <div    class="swiper-wrapper">
+        <article    class="testimonial swiper-slide">
             <div    class="avator">
                 <img src="city images\Margie.jpeg" alt="">
             </div>
@@ -76,7 +76,7 @@
             </div>
             <audio src="AUDIO.ogg" controls></audio>
         </article>
-        <article    class="testimonial">
+        <article    class="testimonial swiper-slide">
             <div    class="avator">
                 <img src="city images\cook.jpeg" alt="">
             </div>
@@ -88,7 +88,7 @@
                 <p style="color: black; font-family: Arial, Helvetica, sans-serif;">I am Naka, the students cook. I highly appreciate the school for the efforts it has done to impart morals in the children. This is the first school that i have worked for as a cook but the students treat you as a mother and also grade you to be a teacher also. The students are indeed living christ-like lives.</p>
             </div>           
         </article>
-        <article    class="testimonial">
+        <article    class="testimonial swiper-slide">
             <div    class="avator">
                 <img src="city images\AMBASSADOR.jpeg" alt="">
             </div>
@@ -100,7 +100,7 @@
                 <p style="color: purple; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">well,its rare for a government school to have an ambassador, but its the passion for the school that I saw my Mom hold for this school. Mum has always yarned to own a school of her own but she failed to because the much passion for City Of Faith couldnt let her leave her students for a new environment. And for this case, I plegded to provide what so ever is within my reach to help the school grow and also develop, so that my Mom never feels bad that she is not owning a her own school. I chose to become an ambassador of the school to help Mom's school where need be because, the government doesnt provide enough for all the government schools.</p>
             </div>
         </article>
-        <article    class="testimonial">
+        <article    class="testimonial swiper-slide">
             <div    class="avator">
                 <img src="city images\HM.jpeg" alt="">
             </div>
@@ -112,12 +112,26 @@
                 <p style="color:black;">Honestly, I happened to first listen to my son's testimonial, the ambassador, and all that he said is right. He spoke all from my mouth, and I highly appreciate his efforts for sure. i also appreciate fellow staff for co-operating with me to bring back the school to the top. How can I forget the students,,, they practice the christ-like lives they are taught and that's best I want from a student in my school. I highly reccommend you to come and join the school even in times when I shall be shifted to another government school, because the foundation that has been built is a strong one that no other person can break</p>
             </div>
         </article>
-
     </div>
-
 </section>  
             <script src="main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
 </body>
 </html>
